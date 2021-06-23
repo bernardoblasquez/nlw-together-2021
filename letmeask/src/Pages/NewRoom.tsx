@@ -14,7 +14,7 @@ export  function NewRoom(){
     const history= useHistory()
     const [newRoom, setNewRoom] = useState('')
     
-    async function hadleCreateRoom(event: FormEvent){
+    async function handleCreateRoom(event: FormEvent){
         event.preventDefault();
 
         if (newRoom.trim() === ''){
@@ -49,7 +49,7 @@ export  function NewRoom(){
                     <h1>{user?.name}</h1>
                     <h2>Criar uma nova sala</h2>
 
-                    <form action="" onSubmit={hadleCreateRoom}>
+                    <form action="" onSubmit={handleCreateRoom}>
                         <input 
                             type="text" 
                             placeholder="Nome da sala" 
