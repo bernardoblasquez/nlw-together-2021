@@ -16,7 +16,10 @@ export  function Home(){
     const { user, signInWithGoogle } = useAuth();
     const [roomCode, setRoomCode] = useState(''); 
 
-    async function handleCreateRoom(){
+    async function handleCreateRoom(event: FormEvent){
+        
+        event.preventDefault();
+
         if (!user){
             await signInWithGoogle()
         }
