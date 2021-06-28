@@ -7,6 +7,15 @@
     & + .question{
         margin-top: 8px;
     }
+    
+    &.highlighted{ 
+        background: #f4f0ff;
+        border: 1px solid #737380;
+    }
+
+    &.answered{
+        background-color: #dbdcdd;
+    } 
 
     p{
         color:#29292e
@@ -34,6 +43,12 @@
                 color: #737380;
                 font-weight: 500;
             }
+        }
+
+        > div {
+          display: flex;
+          align-items: center;
+          gap: 16px;  
         }
 
         button{
